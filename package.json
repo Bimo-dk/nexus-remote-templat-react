@@ -1,0 +1,24 @@
+{
+  "name": "__REMOTE_NAME__",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 8702 --host 0.0.0.0",
+    "build": "vite build",
+    "build:prod": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "@bimo-dk/nexus-build": "^0.2.0",
+    "@bimo-dk/nexus-runtime-react": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.0.0"
+  }
+}
