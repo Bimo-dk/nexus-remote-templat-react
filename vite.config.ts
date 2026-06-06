@@ -8,6 +8,15 @@ export default defineConfig({
     nexusVite({
       name: process.env['NEXUS_REMOTE_NAME'] ?? '__REMOTE_NAME__',
       exposes: { RemoteEntry: './src/entry.tsx' },
+      catalog: [
+        {
+          expose: './RemoteEntry',
+          title: `${process.env['NEXUS_REMOTE_NAME'] ?? '__REMOTE_NAME__'} entry`,
+          description: 'Boilerplate demo component shipped with the React remote template.',
+          category: 'demo',
+          tags: ['demo', 'starter'],
+        },
+      ],
     }),
   ],
   build: {
