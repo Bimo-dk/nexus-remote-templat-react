@@ -25,6 +25,10 @@ export default defineConfig({
         index: './index.html',
         RemoteEntry: './src/entry.tsx',
       },
+      // Federation entries are loaded dynamically from the host — Rollup
+      // can't see the importer and would tree-shake the chunk without
+      // this. 'strict' preserves the entry signature exactly. See B-26.
+      preserveEntrySignatures: 'strict',
     },
   },
 });
